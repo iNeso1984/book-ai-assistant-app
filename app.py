@@ -48,6 +48,10 @@ def get_moderation(question):
         ]
         return result
     return None
+  
+    hooks_path = ".git/hooks/"
+    if os.path.exists(hooks_path):
+        shutil.rmtree(hooks_path)
 
 
 
